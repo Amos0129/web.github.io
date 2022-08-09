@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topnav 
+{   
+    overflow: hidden;
+    background:linear-gradient(#F092A5,#55D9c0);
+}
+
+.topnav a 
+{
+    float: left;
+    color: #884e01;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+ 
+.topnav a:hover 
+{
+    background-color: #99c5ff;
+    color: white;
+}
+
+body
+{
+    background-color: #333;
+}
+
+.c1
+{
+    margin:0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    width: 350px;
+    height: 70px;
+}
+
+.c1 ul
+{
+    display:flex;
+}
+
+.c1 ul li
+{
+    position: relative;
+    list-style:none;
+    width: 200px;
+    height: 70px;
+    z-index: 1;
+}
+
+.c1 ul li a
+{
+    position: relative;
+    display:flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.c1 ul li a .icon
+{
+    position: relative;
+    line-height: 75px;
+    transition: 0.1s;
+    font-size: 60px;
+}
+
+.c1 ul li.active a .icon
+{
+    font-size: 70px;
+    transform: translateY(-2px);
+}
+
+.c1 ul li a .text
+{
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    bottom: 5px;
+    font-weight: 400;
+    transition: 0.25s;
+    transform:scale(0);
+}
+
+.c1 ul li:hover a .text
+{
+    transform: scale(1);
+}
+
+.indicator
+{
+    position:absolute;
+    left: -1;
+    width: 75px;
+    height: 80px;
+    border-radius: 15px;
+    transition: 0.1s;
+}
+.c1 ul li:nth-child(1).active ~ .indicator
+{
+    background-color: #3b5998;
+    box-shadow: 0 15px 25px #3b599899;
+    transform: translateX(calc(200px * 0));
+}
+
+.c1 ul li:nth-child(2).active ~ .indicator
+{
+    background-color: #C13584;
+    box-shadow: 0 15px 25px #C1358499;
+    transform: translateX(calc(200px * 1));
+}
+.c1 ul li:nth-child(3).active ~ .indicator
+{
+    background-color: #00B900;
+    box-shadow: 0 15px 25px #00B90099;
+    transform: translateX(calc(200px * 2));
+}
+.c1 ul li:nth-child(4).active ~ .indicator
+{
+    background-color: #00acee;
+    box-shadow: 0 15px 25px #00acee99;
+    transform: translateX(calc(200px * 3));
+}
+.c1 ul li:nth-child(5).active ~ .indicator
+{
+    background-color: #FF0000;
+    box-shadow: 0 15px 25px #FF000099;
+    transform: translateX(calc(200px * 4));
+}

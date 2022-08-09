@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡資訊</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+    <nav class="topnav">
+            <a class="active" href="index.html"><b>首頁</b></a>
+            <a href="index2.html"><b>關於我們</b></a>
+            <a href="index3.html"><b>聯絡資訊</b></a>
+    </nav>
+  
+    <div class="c1">
+        <ul>
+            <li class="list active">
+                <a href="https://www.facebook.com/"  target="_blank">
+                    <span class="icon">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </span>
+                    <span class="text">Facebook</span>
+                </a>                  
+            </li>              
+            <li class="list">
+                <a href="https://www.instagram.com/"  target="_blank">
+                    <span class="icon">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </span>
+                    <span class="text">Instagram</span>
+                </a>               
+            </li>
+            <li class="list">
+                  <a href="#">
+                    <span class="icon">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </span>
+                  <span class="text">Telephone</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="https://twitter.com/?lang=zh-tw"  target="_blank">
+                    <span class="icon">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </span>
+                    <span class="text">Twitter</span>
+                  </a>                
+              </li>
+              <li class="list">
+                  <a href="https://www.youtube.com/"  target="_blank">
+                    <span class="icon">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </span>
+                    <span class="text">YouTube</span>
+                  </a>               
+              </li>
+              <div class="indicator"></div>
+            </ul>
+      </div>    
+
+      </div>
+      <script>
+          //滑鼠移入時會新增active的class使得icon背景變色,滑鼠移出時則會移除該class使icon背景沒變色
+          let list = document.querySelectorAll('.list');
+          function sAC(){
+            list.forEach((item) =>
+            item.classList.remove('active'));
+            this.classList.add('active');
+          }
+          list.forEach((item) =>
+          item.addEventListener('mouseover',sAC))
+      </script>
+      
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

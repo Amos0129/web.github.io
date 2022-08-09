@@ -1,0 +1,237 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  background-color: black;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 0;
+  
+}
+
+i
+{
+  position:absolute;
+  height: 5px;
+  background:linear-gradient(transparent,#fff);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: animate 5s linear infinite;
+}
+
+i:nth-child(3n+1)
+{
+  background:linear-gradient(transparent,#F092A5);
+  box-shadow: 0 0 40px 3px #F092A5;
+}
+i:nth-child(3n+2)
+{
+  background:linear-gradient(transparent,#05ACD3);
+  box-shadow: 0 0 40px 3px #05ACD3;
+}
+i:nth-child(3n+3)
+{
+  background:linear-gradient(transparent,#fff);
+  box-shadow: 0 0 40px 3px #fff;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    transform: translateY(-500px);
+  }
+  100%
+  {
+    transform: translateY(calc(300vh + 500px));
+  }
+}
+
+
+.topnav 
+{
+  overflow: hidden;
+  background:linear-gradient(#05ACD3,#F092A5);
+}
+
+.center1
+{
+  color: yellow;
+}
+  
+.topnav a 
+{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+ 
+.topnav a:hover 
+{
+  background-color: #99c5ff;
+  color: white;
+} 
+  
+.numbertext
+{
+  color: #d4cbbf;
+}
+  /* 以下為圖片輪播區塊 */
+.earth
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px #0F4C81;
+}
+
+.earth_text
+{
+  color: #0F4C81;
+  font-size: 100px;
+}
+
+.moon
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(255 249 177);
+}
+
+.moon_text
+{
+  color: RGB(255 249 177);
+  font-size: 100px;
+}
+
+.sun
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(232 93 25);
+}
+
+.sun_text
+{
+  color: RGB(232 93 25);
+  font-size: 100px;
+}
+
+.water
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(176	224	230);
+}
+
+.water_text
+{
+  color: RGB(176	224	230);
+  font-size: 100px;
+}
+
+.gold
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(204,102,51);
+}
+
+.gold_text
+{
+  color: RGB(204,102,51);
+  font-size: 100px;
+}
+
+.fire
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(255, 74, 0);
+}
+
+.fire_text
+{
+  color: RGB(255, 74, 0);
+  font-size: 100px;
+}
+
+.tree
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(210 180 140);
+}
+
+.tree_text
+{
+  color: RGB(210 180 140);
+  font-size: 100px;
+}
+
+.Saturn
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(205 160 86);
+}
+
+.Saturn_text
+{
+  color: RGB(205 160 86);
+  font-size: 100px;
+}
+
+.sky
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(173 216 230);
+}
+
+.sky_text
+{
+  color: RGB(173 216 230);
+  font-size: 100px;
+}
+
+.sea
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 40px 1px RGB(46 93 157);
+}
+
+.sea_text
+{
+  color: RGB(46 93 157);
+  font-size: 100px;
+}
+
+img
+{
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+	border-radius: 50%;
+}
+
+
+
